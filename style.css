@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+  margin: 0;
+  padding: 10px;
+}
+.header 
+{
+  padding: 20px;
+  background-color:rgb(228, 182, 182);
+  text-align: center; 
+}
+.topnav{
+  overflow: hidden;
+  background-color: black;
+}
+.topnav a{
+  float: left;
+  display: block;
+  padding: 20px 16px;
+  color: wheat;
+}
+.topnav a:hover{
+  color: black;
+  background-color: aliceblue;
+
+}
+.introduction
+{
+  text-align: center;
+  background-image: url('./intro.jpg');
+  background-position: center;
+  background-size: cover;
+  width:100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 12px;
+}
+.introduction h2
+{
+  color: white;
+}
+.about
+{
+  padding: 12px;
+}
+.column
+{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.row:after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.column.side
+{
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+.column.middle
+{
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.footer
+{
+  background-color: aliceblue;
+  text-align: center;
+  padding: 16px;
+}
+@media screen and (max-width:600px){
+  .column{
+    width: 100%;
+  }
+}
